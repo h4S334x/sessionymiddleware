@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+{{#if conocido}}
+  <p>Hola <strong>{{nombre}}</strong></p>
+  <form action="/salir" method="post"><button>Cerrar sesion</button></form>
+{{else}}
+  <p>No hay variable de sesion cargada.</p>
+  <p><a href="/">Volver</a></p>
+{{/if}}
